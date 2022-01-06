@@ -68,7 +68,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
-    test = webdriver.Firefox(executable_path="./geckodriver")
+    test = webdriver.Firefox(executable_path="drivers/mozilla/geckodriver")
     w = MainWindow(test)
     w.show()
     sys.exit(app.exec_())
